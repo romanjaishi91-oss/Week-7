@@ -1,0 +1,168 @@
+/* =========================================
+   Author: Roman Jaishi
+   Assignment: Web Engineering Flexbox Layout
+   ========================================= */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f6f8;
+  color: #333;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#main-title {
+  color: #1a252f;
+  margin-bottom: 5px;
+}
+
+/* =========================================
+   Navigation Menu Alignment
+   ========================================= */
+.nav-menu {
+  display: flex;                /* Flexbox layout */
+  justify-content: space-between;/* Distribute space evenly */
+  align-items: center;          /* Vertical center alignment */
+  gap: 15px;                    
+  background-color: #1a252f;
+  padding: 12px 20px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+.nav-menu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 12px;
+  transition: background-color 0.2s ease;
+}
+
+.nav-menu a:hover {
+  background-color: #34495e;
+  border-radius: 4px;
+}
+
+/* =========================================
+   Horizontal Card Layout (.content-wrapper)
+   ========================================= */
+.content-wrapper {
+  display: flex;                /* Horizontal flex layout */
+  flex-wrap: wrap;              /* Responsive wrapping */
+  justify-content: center;      
+  gap: 20px;                    /* Spacing between cards */
+  margin-bottom: 30px;
+}
+
+.card {
+  flex: 1 1 300px;              
+  max-width: 450px;             
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.card h2 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+/* =========================================
+   Responsive Image Styling
+   ========================================= */
+
+/* Fixed width commented out as required: */
+/*
+.profile-img {
+  width: 1000px;
+}
+*/
+
+.profile-img {
+  max-width: 100%;             /* Prevents image overflow on smaller screens */
+  height: auto;
+  border-radius: 6px;
+  margin: 10px 0;
+}
+
+/* =========================================
+   Contact Form & Footer
+   ========================================= */
+#contact {
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+#contact h2 {
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#contact label {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+#contact input,
+#contact textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+#contact button {
+  margin-top: 10px;
+  padding: 12px;
+  background-color: #1a252f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#contact button:hover {
+  background-color: #34495e;
+}
+
+footer {
+  text-align: center;
+  padding: 15px 0;
+  color: #666;
+  border-top: 1px solid #ddd;
+  margin-top: 20px;
+}
+
+p a[href="flexbox-simulator.html"] {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  color: #2980b9;
+  font-weight: bold;
+}
